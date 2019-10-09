@@ -7,8 +7,6 @@
 #include "Engine/World.h"
 #include "TankAIController.generated.h"
 
-// Forward Declarations
-class ATank;
 
 UCLASS()
 class BATTLETANK_API ATankAIController : public AAIController
@@ -22,9 +20,5 @@ public:
 	virtual void Tick(float DeltaTime) override;
 
 
-private:
-	ATank* GetAiControlledTank() const;
-
-	ATank* GetPlayerTank() const;
 	
 };
